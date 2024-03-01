@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-7</title>
+    <style>
+        .city {
+            text-align: center;
+            color: #7e1bc5;
+            font-size: 56px;
+            text-shadow: 3px 5px 10px #6680cd;
+        }
+
+        .gender {
+            text-align: center;
+            color: #000000;
+            font-size: 33px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Assignment-7</h1>
+
+    <script>
+        //Task1
+        /**Write a program to take “city” name as input from user. If
+user enters “Karachi”, welcome the user like this:
+“Welcome to city of lights”/*/
+        var a = prompt("Which city do you live?");
+        var cityName = 'karachi';
+
+        if (a === cityName) {
+            document.write(`<h1 class ="city">Welcome to city of lights `);
+        }
+        else {
+            document.write(`<h1 class ="city">Sorry! you do not live in Karachi.`)
+        }
+
+
+        //Task 2
+        /**
+         * Write a program to take “gender” as input from user. If the
+        user is male, give the message: Good Morning Sir. If the
+        user is female, give the message: Good Morning Ma’am./**/
+
+        var userGender = prompt("What's your gender ?");
+        var gender_1 = 'male';
+        var gender_2 = 'female';
+        if (userGender === gender_1) {
+            document.write(`<h3 class ="gender">Good Morning!! Sir` + "<br>" + "<br>");
+        }
+        if (userGender === gender_2) {
+            document.write(`<h3 class ="gender">Good Morning!! Ma'am` + "<br>" + "<br>");
+        }
+
+
+        //Task 3
+        /** Write a program to take input color of road traffic signal
+        from the user & show the message according to this table/**/
+
+        var userValue = prompt('Tell me the traffic signal color');
+        var color_1 = 'red';
+        var color_2 = 'yellow';
+        var color_3 = 'green';
+
+        if (userValue === color_1) {
+            document.write("Red light indicate that you must have to stop");
+        }
+        if (userValue === color_2) {
+            document.write("Yellow  light indicate that you should start engine.");
+        }
+        if (userValue === color_3) {
+            document.write("Green light indicates that you can move now");
+        }
+    </script>
+</body>
+
+</html>
